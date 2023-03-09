@@ -1,0 +1,169 @@
+body {
+  font-family: 'Poppins' !important;
+}
+
+.upper-body-container {
+  padding-left: 121px;
+  display: flex;
+  flex-direction: column;
+}
+
+.p-img-details {
+    display: flex;
+    flex-direction: row;
+}
+
+.p-image-container {
+  background-color: #e6f0fb;
+  border-radius: 24px;
+  margin-top: 41px;
+  margin-bottom: 20px;
+  width: 536px;
+  height: 463px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p-details {
+  margin-left: 45px;
+  margin-top: 47px;
+  box-sizing: border-box;
+}
+
+.p-dt-name {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #2f294d;
+}
+
+.p-evaluation {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.evaluation-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.p-conditions {
+  display: flex;
+  flex-direction: row;
+}
+
+.p-conditions-detail {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-mark-icon {
+  margin-right: 10px;
+  width: 23px;
+  height: 23px;
+}
+
+.p-slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.p-slider {
+    width: 130px;
+    height: 120px;
+    margin-left: 16px;
+    background-color: #E6F0FA;
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider-icon {
+    width: 24px;
+    height: 24px;
+}
+
+#slider-left-btn {
+    border: none;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #E6F0FB;
+}
+
+#slider-right-btn {
+    border: none;
+    margin-left: 14px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    background-color: #E6F0FB;
+}
+
+.p-review-point {
+    margin-left: 9px;
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#p-review-count {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #9794A6;
+}
+
+.buy-add-btn {
+  margin-bottom: 20px;
+}
+
+#buy-btn {
+  width: 226px;
+  height: 44px;
+  background-color: #0064d2;
+  border-radius: 10px;
+  color: white;
+  padding: 14px;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center; 
+  margin-top: 75px;
+}
+
+#add-to-cart-btn {
+  margin-top: 75px;
+  text-align: center;
+  width: 226px;
+  height: 44px;
+  border: none;
+  background: rgba(0, 100, 210, 0.1);
+  border-radius: 10px;
+  color: #0064d2;
+  padding: 14px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-left: 16px;
+}
+
+#p-detail-1 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #9794a6;
+}
+
+#pro-price {
+  margin-top: 8px;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 66px;
+  color: #2f294d;
+}

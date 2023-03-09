@@ -1,0 +1,21 @@
+.footer-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.footer-section-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #253D4E;
+}
+
+.footer-section-wrapper {
+    margin-right: 160px; 
+}
+
+.footer-logo-container {
+    margin-left: 102px;
+    margin-right: 240px;
+}

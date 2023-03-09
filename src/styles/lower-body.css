@@ -1,0 +1,157 @@
+.product-nav-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #f2f7fd;
+  margin-top: 59px;
+  padding-top: 28px;
+  padding-bottom: 25px;
+  padding-left: 56px;
+}
+
+.product-nav-container p {
+  margin-left: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #878da7;
+}
+
+.about {
+  color: #1c2252 !important;
+}
+
+.product-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 44px;
+}
+
+.product-img-container {
+  width: 246px;
+  height: 258px;
+  border-radius: 24px;
+  margin-left: 58px;
+  padding-left: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e6f0fb;
+}
+
+.product-explanation {
+  list-style: disc;
+  height: 231px;
+  margin-left: 96px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+.product-explanation li {
+  margin: 0;
+}
+
+#sponsored-items-header {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #1e1f4b;
+  margin-top: 73px;
+  margin-bottom: 38px;
+  margin-left: 58px;
+}
+
+.sponsored-items-container {
+  display: flex;
+  flex-direction: row;
+  margin-left: 58px;
+}
+
+.rec-product-container {
+  width: 250px;
+  height: 320px;
+  border-radius: 27px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+  background-color: #ffffff;
+}
+
+.sponsored-items-container .rec-product-container {
+  margin-right: 32px;
+}
+
+.rec-product-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20px;
+  width: 210px;
+  height: 180px;
+  border-radius: 27px;
+  background-color: #e6f0fb;
+}
+
+.rec-product-info p {
+  margin-top: 7px;
+}
+
+.rec-product-name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #2f294d;
+  margin-left: 18px;
+  margin-top: 13px;
+}
+
+.rec-product-brand {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+  color: #2f294d;
+  opacity: 0.7;
+  margin-left: 18px;
+}
+
+.rec-product-price-and-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rec-product-evaluation-icon {
+  width: 32px;
+  height: 32px;
+  margin-left: 48px;
+  margin-right: 5px;
+}
+
+.rec-product-price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.02em;
+  color: #2f294d;
+  margin-left: 18px;
+}
+
+.review-point {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2f294d;
+}
