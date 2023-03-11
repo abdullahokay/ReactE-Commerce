@@ -1,5 +1,5 @@
 import "../styles/lower-body.css";
-import productDetailImg from "../img/image-15-enlarged.png";
+// import productDetailImg from "../img/image-15-enlarged.png";
 import recProductImg1 from "../img/rec-product-1.png";
 import recProductImg2 from "../img/rec-product-2.png";
 import recProductImg3 from "../img/rec-product-3.png";
@@ -9,6 +9,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 const LowerBody = (props) => {
+  const { data } = props
+  console.log(data);
   return (
     <div className="lower-body-container">
       <div className="product-nav-container">
@@ -19,7 +21,7 @@ const LowerBody = (props) => {
       </div>
       <div className="product-details">
         <div className="product-img-container">
-          <img alt="" src={productDetailImg}></img>
+          <img alt="" src={data.thumbnail} style={{width:180, height:180}}></img> 
         </div>
         <ul className="product-explanation">
           <li>15 cm (6.1-inch) Super Retina XDR display</li>

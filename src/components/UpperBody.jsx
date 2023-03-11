@@ -1,24 +1,37 @@
 import React from "react";
-import productImg1 from "../img/product_1.png";
 import "../styles/upper-body.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/fontawesome-free-regular";
 import {  faStar } from "@fortawesome/free-solid-svg-icons";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../redux/cartReducer";
+
 
 const UpperBody = (props) => {
   const { data } = props
-  console.log(props);
-  console.log(data);
+  const dispatch = useDispatch()
+
+  const handleAddToCart = () => {
+    dispatch(addToCart({
+      id: data.id,
+      title: data.title,
+      img: data.thumbnail,
+      price: data.price,
+      brand: data.brand,
+      description: data.description,
+      quantity: 1,
+    }));
+  };
+
   return (
     <div className="upper-body-container">
       <div className="p-img-details">
         <div className="p-image-container">
-          <p>{data.title}</p>
-          <img alt="" src={productImg1}/>
+          <img alt="" src={data.images[0]} style={{width:500, height:281}}/>
         </div>
         <div className="p-details">
           <div className="p-name-container">
-            <p className="p-dt-name">Apple iPhone 13 (128GB)</p>
+            <p className="p-dt-name">{data.title}</p>
             <p id="p-detail-1">Free 2 Days Shipping | 1 Year Warranty</p>
           </div>
           <div className="p-evaluation">
@@ -47,11 +60,11 @@ const UpperBody = (props) => {
               color="#C4C4C4"
               className="evaluation-icon"
             />
-            <p className="p-review-point">4.5</p>
+            <p className="p-review-point">{data.rating}</p>
             <p id="p-review-count">from 392 Reviews</p>
           </div>
           <div className="p-price-container">
-            <p id="pro-price">$ 580</p>
+            <p id="pro-price">$ {data.price}</p>
           </div>
           <div className="p-conditions">
             <ul>
@@ -88,7 +101,7 @@ const UpperBody = (props) => {
                     icon={faCheckCircle}
                     className="check-mark-icon"
                   />
-                  Comes with a Package
+                  Delivery: Varies
                 </li>
               </div>
             </ul>
@@ -97,7 +110,7 @@ const UpperBody = (props) => {
             <button type="submit" id="buy-btn">
               Buy it Now!
             </button>
-            <button type="submit" id="add-to-cart-btn">
+            <button type="submit" id="add-to-cart-btn" onClick={() => handleAddToCart()}>
               Add to Cart
             </button>
           </div>

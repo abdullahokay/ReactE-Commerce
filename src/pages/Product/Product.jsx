@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom"
 import UpperBody from '../../components/UpperBody'
 import LowerBody from '../../components/LowerBody'
+import Loading from "../../components/Loading"
 
 const Product = () => {
 
@@ -10,23 +11,27 @@ const Product = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`https://dummyjson.com/products/${id}`)
+        fetch(`https://dummyjson.com/products/${id}`, {})
             .then((res) => res.json())
             .then((response) => {
             setData(response);
             setIsLoading(false);
-            console.log("deneme",response);
-            console.log(`https://dummyjson.com/products/${id}`);
           })
           .catch((error) => console.log(error));
-    });
+    },[id]);
 
-    
+    if (isLoading) {
+        return <Loading/>
+    }
 
     return (
         <>
-            <UpperBody  data={data} />
-            <LowerBody data={data} />
+            {!isLoading && (
+                <>
+                    <UpperBody  data={data} />
+                    <LowerBody data={data} />
+                </>
+            )}
         </>
     )
 }

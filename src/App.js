@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import  Home  from './pages/Home/Home'
 import  Cart  from './pages/Cart/Cart'
 import Product from './pages/Product/Product'
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar'
 import Footer from './components/Footer'
 

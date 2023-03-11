@@ -19,3 +19,27 @@
     margin-left: 102px;
     margin-right: 240px;
 }
+
+.footer-divider {
+    margin-left: 102px;
+    margin-right: 102px;
+    margin-top: 87px;
+    margin-bottom: 54px;
+    border: 2px solid gray
+}
+
+.band-info {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .footer-copyright-info {
+    margin-left: 102px;
+    margin-bottom: 49px;
+  }
+  
+  .payments {
+    margin-left: 807px;
+    margin-right: 102px;
+    margin-bottom: 45px;
+  }
