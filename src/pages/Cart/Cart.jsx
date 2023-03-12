@@ -1,11 +1,20 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { CartItem } from "./CartItem";
+import { downloadCartItems } from "../../redux/cartReducer";
 import { Row } from "react-bootstrap";
 import "../../styles/cart.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 
 const Cart = () => {
     const products = useSelector(state => state.cart.products)
+    const dispatch = useDispatch();
+
+    const handleDownloadCartItems = async () => {
+        await dispatch(downloadCartItems());
+    };
+      
 
     if(products.length === 0) {
         return (
@@ -15,7 +24,12 @@ const Cart = () => {
         )
     }
     return (
-        <>
+        <>  
+            <div className="download-cart-items-btn-wrapper">
+                <button className="download-cart-items-btn" onClick={() => handleDownloadCartItems()}><FontAwesomeIcon className="download-cart-items-icon" icon={faDownload}></FontAwesomeIcon></button>
+                <br></br>
+                <p className="download-cart-items-text">Download Cart Items</p>
+            </div>
             <div className="cart-container">
                     <div className="products-in-cart-container">
                         <Row style={{paddingLeft: 0, paddingRight: 0}}>
@@ -26,9 +40,6 @@ const Cart = () => {
                             ))}
                         </Row>
                     </div>
-                {/* <div className="subtotal">
-                    <p></p>
-                </div> */}
             </div>
         </>
     )

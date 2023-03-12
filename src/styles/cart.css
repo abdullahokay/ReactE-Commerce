@@ -74,3 +74,27 @@
     height: 32px;
     background-color: transparent;
 }
+
+.download-cart-items-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.download-cart-items-btn {
+    width: 48px;
+    height: 48px;
+    color: #0064D2;
+    background-color: transparent;
+}
+
+.download-cart-items-icon {
+    width: 32px;
+    height: 32px;
+}
+
+.download-cart-items-text {
+    font-size: 24px;
+}

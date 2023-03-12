@@ -32,12 +32,12 @@ export const CartItem = (props) => {
   return (
     <>
       <Row className="cart-item-container">
-        <Col style={{paddingLeft: 0, paddingRight: 0}} md={3} className="cart-item-img-col">
+        <Col style={{paddingLeft: 0, paddingRight: 0}} className="cart-item-img-col">
           <div className="cart-item-img-container">
             <img alt='' src={product.img} style={{width: 180, height: 180}}/>
           </div>
         </Col>
-        <Col style={{paddingLeft: 0, paddingRight: 0}} md={7} className="cart-item-info-col">
+        <Col style={{paddingLeft: 0, paddingRight: 0}} className="cart-item-info-col">
           <div className="cart-item-info-container">
             <p style={{marginBottom: 10}}className="cart-item-title">
               <b>{product.title}</b>
@@ -48,16 +48,16 @@ export const CartItem = (props) => {
             <p style={{marginBottom: 10}} className="cart-item-description">
               {product.description}
             </p>
-            <p>${product.price}</p>
+            <p><b>${product.price}</b></p>
           </div>
         </Col>
-        <Col style={{paddingLeft: 0, paddingRight: 0}} md={2}>
-        <div className="count-handler">
-            <button className="cart-counter-btn" type="submit" onClick={() => handleDecrement()}> <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> </button>
-            <p className="product-quantity">{product.quantity}</p>
-            <button className="cart-counter-btn" type="submit" onClick={() => handleAddToCart()}> <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon> </button>
-            <button className="remove-product-btn" onClick={() => handleRemoveItem()}><FontAwesomeIcon icon={faTrash} color="red" className="remove-product-icon"/></button>
-        </div>
+        <Col style={{paddingLeft: 0, paddingRight: 0}}>
+          <div className="count-handler">
+              <button className="cart-counter-btn" type="submit" onClick={() => handleDecrement()}> <FontAwesomeIcon icon={faMinus}></FontAwesomeIcon> </button>
+              <p className="product-quantity">{product.quantity}</p>
+              <button className="cart-counter-btn" type="submit" onClick={() => handleAddToCart()}> <FontAwesomeIcon icon={faPlus}></FontAwesomeIcon> </button>
+              <button className="remove-product-btn" onClick={() => handleRemoveItem()}><FontAwesomeIcon icon={faTrash} color="red" className="remove-product-icon"/></button>
+          </div>
         </Col>
       </Row>
    </>
