@@ -1,10 +1,12 @@
 ## Built With
 
-Frontend (SPA)
+Frontend
 
 - Used Javascript framework on front-end - [React.js](https://reactjs.org/)
 - State management pattern on front-end - [Redux](https://redux.js.org/)
 - UI development and responsiveness - [React-Bootstrap](https://react-bootstrap.github.io/)
+- Routing - [React Router](https://reactrouter.com/en/main)
+- Icons - [Font Awesome](https://fontawesome.com)
 
 Backend (API)
 
