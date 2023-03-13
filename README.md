@@ -10,7 +10,7 @@ Frontend
 
 Backend (API)
 
-- dummyJSON API - [API](https://dummyjson.com/)
+- dummyJSON - [API](https://dummyjson.com/)
 
 # Getting Started with Create React App
 
