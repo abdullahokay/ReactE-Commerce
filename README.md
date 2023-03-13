@@ -1,6 +1,6 @@
-# Built With
+## Built With
 
-Frontend
+# Frontend
 
 - Used Javascript framework on front-end - [React.js](https://reactjs.org/)
 - State management pattern on front-end - [Redux](https://redux.js.org/)
@@ -8,27 +8,27 @@ Frontend
 - Routing - [React Router](https://reactrouter.com/en/main)
 - Icons - [Font Awesome](https://fontawesome.com)
 
-Backend (API)
+# Backend (API)
 
 - dummyJSON - [API](https://dummyjson.com/)
 
 ## Project Images
-Navbar and Header
+# Navbar and Header
 ![nav-header](resim/nav-header.PNG)
-About Us Section
+# About Us Section
 ![about-us](resim/about-us.PNG)
-Proudct Showcase
+# Proudct Showcase
 ![product-showcase](resim/product-showcase.PNG)
-Contact Us Section
+# Contact Us Section
 ![contact-us](resim/contact-us.PNG)
-Customer Recommendation Section
+# Customer Recommendation Section
 ![customer-rec](resim/customer-rec.PNG)
-Footer
+# Footer
 ![footer](resim/footer.PNG)
-Shopping Cart Page
+# Shopping Cart Page
 ![cart](resim/cart.PNG)
 
-# Getting Started with Create React App
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
