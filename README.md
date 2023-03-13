@@ -12,6 +12,8 @@
 
 - dummyJSON - [API](https://dummyjson.com/)
 
+# Have a look at on [Netlify](https://heroic-licorice-d72824.netlify.app/)
+
 ## Project Images
 # Navbar and Header
 ![nav-header](resim/nav-header.PNG)
