@@ -1,3 +1,15 @@
+## Built With
+
+Frontend (SPA)
+
+- Used Javascript framework on front-end - [React.js](https://reactjs.org/)
+- State management pattern on front-end - [Redux](https://redux.js.org/)
+- UI development and responsiveness - [React-Bootstrap](https://react-bootstrap.github.io/)
+
+Backend (API)
+
+- dummyJSON API - [API](https://dummyjson.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
