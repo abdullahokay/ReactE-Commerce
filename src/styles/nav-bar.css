@@ -1,12 +1,17 @@
+#navbar {
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
+  border-radius: 0px 0px 40px 40px;
+}
+
 .navbar-container {
   padding-left: 121px;
   padding-top: 16px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: #ffffff;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.12);
-  border-radius: 0px 0px 40px 40px;
 }
 
 .navbar-items-wrapper {
@@ -17,7 +22,7 @@
 }
 
 .search-input {
-  width: 549px;
+  width: 500px;
   height: 45px;
   margin-left: 37px;
   background: #f3f3f3;
@@ -40,7 +45,6 @@
 .wish-list {
   display: flex;
   align-items: center;
-  margin-left: 39px;
 }
 
 .wishlist-icon {
@@ -57,7 +61,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-left: 26px;
 }
 
 .cart-icon {
@@ -77,10 +80,14 @@
 }
 
 .browse-all-ctg-btn {
-  padding: 11px 13px;
+  padding: 14px 8px;
   background-color: #0064D2;
   border-radius: 8px;
   color: white !important;
-  margin-left: 28px;
   border: none;
+  width: 175px;
+}
+
+.search-bar form-control {
+  width: 100%;
 }
