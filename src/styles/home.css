@@ -4,8 +4,19 @@ body {
     font-family: 'Source Sans Pro' ,sans-serif;
 }
 
+.home-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .home-title-wrapper {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .home-title {
@@ -25,10 +36,27 @@ body {
 .home-picture-wrapper {
     display: flex;
     justify-content: center;
+    width: auto;
 }
 
 .home-picture-2-wrapper {
     margin-left: 30px;
+}
+
+.home-products-section-wrapper {
+    margin-top: 100px;
+    width: max-content;
+}
+
+.home-about-us-wrapper {
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.customer-rec-section-wrapper {
+    width: 100%;
 }
 
 .about-us-info {
@@ -102,10 +130,6 @@ body {
     font-weight: 400;
     color: #BDBDBD;
     line-height: 160%;
-}
-
-.home-products-section-wrapper {
-    margin-top: 100px;
 }
 
 .products-section-header {
@@ -210,6 +234,7 @@ body {
     background-color: #112B3C;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .c-section-title {
@@ -268,9 +293,14 @@ body {
     color: rgba(255, 255, 255, 0.8);
     font-weight: 400;
 }
+
 .contact-us-section-wrapper {
     margin-top: 100px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
 }
+
 .contact-us-img-and-area-wrapper {
     display: flex;
     flex-direction: row;
@@ -339,3 +369,11 @@ body {
     color: #FFFFFF;
     background-color: #F66B0E;
 }
+
+/* @media screen and (max-width: 600px) {
+    .home-products-section-wrapper {
+        background-color: red;
+        width: max-content;
+        margin-left: 150px;
+    }
+} */
