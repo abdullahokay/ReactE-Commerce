@@ -48,15 +48,15 @@ body {
     width: max-content;
 }
 
+.customer-rec-section-wrapper {
+    width: 100%;
+}
+
 .home-about-us-wrapper {
     width: max-content;
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-
-.customer-rec-section-wrapper {
-    width: 100%;
 }
 
 .about-us-info {

@@ -123,8 +123,7 @@ const Home = () => {
                                 )))}                               
                             </div>
                         </div>
-                    </div>
-                    <div className="customer-rec-section-wrapper">
+                        <div className="customer-rec-section-wrapper">
                             <p className="c-section-title">What do customers say..</p>
                             <div className="c-rec-and-image-wrapper">
                                 <div className="c-image-wrapper">
@@ -138,8 +137,8 @@ const Home = () => {
                                     <p className="c-job">Doctor</p>
                                 </div>
                             </div>
-                    </div>
-                    <div className="contact-us-section-wrapper">
+                        </div>
+                        <div className="contact-us-section-wrapper">
                             <div className="contact-us-img-and-area-wrapper">
                                 <div className="contact-us-img-container">
                                     <img alt="" src={contactUsImage}></img>
@@ -167,7 +166,9 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
+                    </div>
         </div>
     )
 }
+
 export default Home;
