@@ -1,5 +1,9 @@
 # Built With
 
+## Design
+
+- You can see the design I have used on Figma - [Design](https://www.figma.com/community/file/1104711681018892132/ebay-new-design-concept)
+
 ## Frontend
 
 - Used Javascript framework on front-end - [React.js](https://reactjs.org/)
